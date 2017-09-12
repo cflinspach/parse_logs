@@ -43,5 +43,6 @@ object CheckCommand "parse_logs" {
 # Usage in IcingaWeb2
 We use the action URL in IcingaWeb2 to display the logs. 
 
+![icingaweb2](https://i.imgur.com/McSyANF.png)
 
 
