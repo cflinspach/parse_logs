@@ -4,7 +4,7 @@ Check plugin for Icinga2 that parses logs and counts the occurrences of a string
 Currently only works with Cisco devices but more to come.
 
 # Installation
-Requires Net::Telnet, Net::Telnet::Cisco, Net::Telnet::Cisco, File::ReadBackwards
+Requires Net::Telnet, Net::Telnet::Cisco, Net::OpenSSH, File::ReadBackwards
 
 You can change the directory logs are stored in by editing line 26 (`my $fileDir = '/var/www/html/parse_logs/';`)
 
