@@ -1,12 +1,11 @@
 # parse_logs.pl
 Check plugin for Icinga2 that parses logs and counts the occurrences of a string. Also collects and displays logs from IcingaWeb2
 
-
-
 Currently only works with Cisco devices but more to come.
 
 # Installation
 Requires Net::Telnet, Net::Telnet::Cisco, Net::Telnet::Cisco, File::ReadBackwards
+
 You can change the directory logs are stored in by editing line 26 (`my $fileDir = '/var/www/html/parse_logs/';`)
 
 ```
