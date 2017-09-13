@@ -1,7 +1,7 @@
 # parse_logs.pl
 Check plugin for Icinga2 that parses logs and counts the occurrences of a string. Also collects and displays logs from IcingaWeb2
 
-Currently only works with Cisco devices but more to come.
+Currently only works with Cisco and Extreme devices but more to come.
 
 # Installation
 Requires Net::Telnet, Net::Telnet::Cisco, Net::OpenSSH, File::ReadBackwards
@@ -16,6 +16,7 @@ check_logs.pl -H [host] -U [username] -P [password] -T [type] -s [search] -w [wa
 
 Possible Types:
 Cisco
+Extreme
 ```
 
 The check command defintion for Icinga2 is:
@@ -40,8 +41,8 @@ object CheckCommand "parse_logs" {
 
 
 # Usage in IcingaWeb2
-We use the action URL in IcingaWeb2 to display the logs. 
+We use the action URL in IcingaWeb2 to display the logs. The string "Loop" is what we're searching for, and the action url is a link to the log files.
 
-![icingaweb2](https://i.imgur.com/McSyANF.png)
+![icingaweb2](https://i.imgur.com/uKDxevX.png)
 
 
