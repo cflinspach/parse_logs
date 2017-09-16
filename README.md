@@ -1,10 +1,10 @@
 # parse_logs.pl
 Check plugin for Icinga2 that parses logs and counts the occurrences of a string. Also collects and displays logs from IcingaWeb2
 
-Currently only works with Cisco and Extreme devices but more to come.
+Tested with Cisco, Brocade and Extreme.
 
 # Installation
-Requires Net::Telnet, Net::Telnet::Cisco, Net::OpenSSH, File::ReadBackwards
+Requires Net::Telnet, Net::Telnet::Cisco, Net::OpenSSH, File::ReadBackwards, Expect
 
 You can change the directory logs are stored in by editing line 26 (`my $fileDir = '/var/www/html/parse_logs/';`)
 
@@ -17,6 +17,7 @@ check_logs.pl -H [host] -U [username] -P [password] -T [type] -s [search] -w [wa
 Possible Types:
 Cisco
 Extreme
+Brocade
 ```
 
 The check command defintion for Icinga2 is:
