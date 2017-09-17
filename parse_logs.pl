@@ -176,7 +176,7 @@ if ($device_type =~ 'Brocade' || $device_type =~ 'brocade') {
 	$expect->send("exit\n");
 	
 	# Open the log file and only read in the first five lines
-    open my $logfile, $file or die "Could not open $stdout_fh: $!";	
+    open my $logfile, '<', $file or die "Could not open $stdout_fh: $!";	
 
 	# Count the occurences of the search string
 	my %count;
