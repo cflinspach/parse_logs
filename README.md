@@ -1,7 +1,9 @@
 # parse_logs.pl
-Check plugin for Icinga2 that parses logs and counts the occurrences of a string. Also collects and displays logs from IcingaWeb2
+Check plugin for Icinga/Nagios that parses logs and counts the occurrences of a string. Also collects and displays logs from IcingaWeb2
 
-Tested with Cisco, Brocade and Extreme.
+Uses ssh or telnet to remote in and save the output from sh log. 
+
+Tested with Cisco, Brocade, Foudry and Extreme.
 
 # Installation
 Requires Net::Telnet, Net::Telnet::Cisco, Net::OpenSSH, File::ReadBackwards, Expect
